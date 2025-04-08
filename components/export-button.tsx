@@ -49,7 +49,7 @@ export function ExportButton() {
   }
 
   return (
-    <Button onClick={handleExport} disabled={isExporting} className="flex items-center gap-2">
+    <Button variant="outline" onClick={handleExport} disabled={isExporting} className="flex items-center gap-2">
       <Download className="h-4 w-4" />
       {isExporting ? "Exporting..." : "Export to Excel"}
     </Button>
